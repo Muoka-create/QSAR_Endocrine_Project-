@@ -25,6 +25,10 @@ The model achieved an overall accuracy of ~82.5%, indicating strong predictive r
 The model generated probability scores for all compounds in the test set. Compounds with the highest predicted probabilities were ranked to identify top predicted active molecules.
 ## Functional Group Highlights
 Key functional groups were manually highlighted in the top predicted active compounds using RDKit visualization tools.
+![Functional Groups 1](Functional_groups_aromatic_1.png)
+![Functional Groups 2](Functional_groups_aromatic_2.png)
+![Functional Groups 3](Functional_groups_aromatic_3.png)
+
 Highlighted features included:
 - Aromatic rings (π-systems associated with receptor binding)
 - Carbonyl groups (C=O) (common in bioactive scaffolds)
