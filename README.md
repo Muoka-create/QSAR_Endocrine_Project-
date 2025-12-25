@@ -13,7 +13,7 @@ Predict whether a chemical is active at the estrogen receptor using SMILES and m
  ## Model Evaluation
  The QSAR model was evaluated using standard classification metrics to assess its ability to distinguish active and inactive compounds. Model performance was assessed on a held-out test set to ensure generalizability and avoid overfitting.
 ## Results
-ROC–AUC score: ~0.78
+ROC–AUC score: ~0.78. ![ROC Curve](Roc_curve.png)
 This indicates good classification performance, with the model able to reliably separate active from inactive compounds better than random guessing.The ROC curve demonstrates a favorable balance between sensitivity and specificity.
 - Accuracy: 0.825
 The model achieved an overall accuracy of ~82.5%, indicating strong predictive reliability for a structure-based QSAR model.
