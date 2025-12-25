@@ -37,6 +37,6 @@ The recurring presence of these functional groups suggests their potential role 
 ## Conclusion
 - A robust QSAR model was developed using molecular fingerprints and Random Forest classification.
 - The model demonstrated strong predictive performance with ROC-AUC ≈ 0.78 and accuracy ≈ 82%.
-- Top predicted active compounds were identified and structurally analyzed.
-- Functional group visualization provided chemically meaningful interpretability of model predictions.
+- The model predicts estrogen receptor activity from molecular fingerprints, prioritizing chemicals that may act as endocrine disruptors before experimental testing. Highlighted functional groups and substructures provide interpretable insights into the chemical features contributing to these predictions.
+- Top predicted active compounds were identified, structurally analyze, and the Functional groups visualized thus providing chemically meaningful interpretability of model predictions.
 - This study highlights the value of combining machine learning with cheminformatics tools for toxicity and bioactivity prediction.
