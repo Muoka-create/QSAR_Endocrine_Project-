@@ -18,8 +18,7 @@ ROC–AUC score: ~0.78. ![ROC Curve](Roc_curve.png)
 This indicates good classification performance, with the model able to reliably separate active from inactive compounds better than random guessing.The ROC curve demonstrates a favorable balance between sensitivity and specificity.
 - Accuracy: 0.825
 The model achieved an overall accuracy of ~82.5%, indicating strong predictive reliability for a structure-based QSAR model.
-- Confusion Matrix: [[22, 1], [6, 11]] ![Confusion Matrix](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cfe91ab5-8cc8-4958-be84-7c66ce4b3ba7" />
-)
+- Confusion Matrix: [[22, 1], [6, 11]] ![Confusion Matrix] <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f8f04ff3-5231-4a92-8a18-1dddf1b8fd81" />)
 ## Top Predicted Active Compounds
 The model generated probability scores for all compounds in the test set. Compounds with the highest predicted probabilities were ranked to identify top predicted active molecules.
 ## Functional Group Highlights
