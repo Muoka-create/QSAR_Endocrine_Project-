@@ -1,20 +1,16 @@
 # QSAR_Endocrine_Project-
 Computational toxicology project: Predicting endocrine disruption potential with interpretable molecular fingerprints.
 ## Objective
-Predict whether a chemical is active at the estrogen receptor using SMILES and machine learning.
+This study aims to identify and proritize relevant structural features of the chemicals that may possess endocrine disrupting potential.
 ## Dataset
 - Source: Tox21 ( NR-ER-LBD assays)
 - Compounds: 199
 - Columns: `smiles`, `activity` (1=active, 0=inactive)
 - ## Methods
-- Features: 1024-bit Morgan fingerprints (RDKit)
-- Model: Random Forest (n_estimators=199)
-- Train/test split: 80/20 stratified
- ## Model Evaluation
- The QSAR model was evaluated using standard classification metrics to assess its ability to distinguish active and inactive compounds. Model performance was assessed on a held-out test set to ensure generalizability and avoid overfitting.
+-This study utilizes a machine learning workflow to develop a model for predicting endocrine disruptin potential of chemicals using their SMILES string and corresponding binary activity label. The data was imported into python using the pandas library and basic inspection was performed to ensure data integrity. SMILES strings were converted into 2D molecular structures using RDKit. These molecular structures facilitate a more comprehensive evaluation of molecular properties. Feature selection was generated usig RDKit, and the molecules were assigned morgan fingerprints to numerically represent the chemical structures. These fingerprints served as molecular descriptors for the model. A Random forest algorithm was trained and the model performance was assessed using classification metrics such as accuracy, reciever operating characteristic area under the curve (ROC-AUC) and confusion matrix. RF was chosen based on its potential to handle class imbalance and its ability to provide important features that support interpretability. The trained model was used to generate predicted probabilities of estrogen receptors activity for compounds in the test set. To enhance interpretability, key compounds were further analyzed by visualizing their molecular structures while key functional groups such as carbonyl groups were highlighted using RDKit to provide qualitative insight into chemical features potentially associated with estrogen receptor activity.
 ## Results
 ROC–AUC score: ~0.78. ![ROC Curve](Roc_curve.png)
-
+The RF model achieved an accuracy of 0.78
 This indicates good classification performance, with the model able to reliably separate active from inactive compounds better than random guessing.The ROC curve demonstrates a favorable balance between sensitivity and specificity.
 - Accuracy: 0.825
 The model achieved an overall accuracy of ~82.5%, indicating strong predictive reliability for a structure-based QSAR model.
