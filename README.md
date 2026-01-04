@@ -5,7 +5,7 @@ This study aims to identify and proritize relevant structural features of the ch
 ## Dataset
 - Source: Tox21 ( NR-ER-LBD assays)
 - Compounds: 199
-- 
+
 - ## Methods
 This study utilizes a machine learning workflow to develop a model for predicting endocrine disruptin potential of chemicals using their SMILES string and corresponding binary activity label (1=active, 0=inactive). The data was imported into python using the pandas library and basic inspection was performed to ensure data integrity. SMILES strings were converted into 2D molecular structures using RDKit. These molecular structures facilitate a more comprehensive evaluation of molecular properties. Feature selection was generated usig RDKit, and the molecules were assigned morgan fingerprints to numerically represent the chemical structures. These fingerprints served as molecular descriptors for the model. A Random forest algorithm was trained and the model performance was assessed using classification metrics such as accuracy, reciever operating characteristic area under the curve (ROC-AUC) and confusion matrix. RF was chosen based on its potential to handle class imbalance and its ability to provide important features that support interpretability. The trained model was used to generate predicted probabilities of estrogen receptors activity for compounds in the test set. To enhance interpretability, key compounds were further analyzed by visualizing their molecular structures while key functional groups such as carbonyl groups were highlighted using RDKit to provide qualitative insight into chemical features potentially associated with estrogen receptor activity.
 ## Results
