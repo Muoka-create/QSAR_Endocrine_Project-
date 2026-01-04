@@ -1,4 +1,4 @@
-# QSAR_Endocrine_Project-
+# Title
 Predicting Estrogen Receptor Activity with Machine Learning: A QSAR Approach to Identify Potential Endocrine Disruptors
 ## Objective
 This study aims to identify and proritize relevant structural features of the chemicals that may possess endocrine disrupting potential.
